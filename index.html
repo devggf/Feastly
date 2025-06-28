@@ -6,26 +6,23 @@
     <title>Foodelic</title>
     <link rel="stylesheet" href="sixth.css">
   
-   <link rel="icon" type="image/png" href="file_00000000040861f5a122941c2ce54f82.png">
+    <link rel="icon" type="image/png" href="file_00000000040861f5a122941c2ce54f82.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 <header>
-
     <nav>
          <h1 id="er">Foodelic <p id="das">find your food recipe</p></h1>
-       
-        <form ><input type="text" placeholder="Search for recipes" 
-            class="searchbox">
+        <form><input type="text" placeholder="Search for recipes" class="searchbox">
          <button type="submit" class="searchBtn">Search</button>
-        </form>
-           
+        </form>   
     </nav>
 </header>
+
 <main>
     <section>
     <div class="recipe-container">
-<h2>Search your fav recipes...</h2>
+        <h2>Search your fav recipes...</h2>
     </div>
     <div class="recipe-details">
         <button type="button" class="recipe-close-btn">
@@ -35,6 +32,7 @@
     </div>
 </section>
 </main> 
+
 <style>
   footer {
     background-color: #212121;
@@ -46,7 +44,6 @@
     bottom: 0;
     width: 100%;
     height: 500px;
-
   }
 
   footer a {
@@ -72,6 +69,114 @@
       margin: 8px 0;
     }
   }
+
+  /* ------------------- ✅ Responsive Additions Below ------------------- */
+
+  @media screen and (max-width: 1024px) {
+    nav h1#er {
+      font-size: 32px;
+    }
+
+    #das {
+      font-size: 14px;
+    }
+
+    .searchbox {
+      width: 300px;
+      font-size: 14px;
+      padding: 8px;
+    }
+
+    .searchBtn {
+      padding: 8px 14px;
+      font-size: 14px;
+    }
+
+    .recipe-container h2 {
+      font-size: 22px;
+    }
+
+    footer {
+      font-size: 15px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    nav h1#er {
+      font-size: 26px;
+      text-align: center;
+    }
+
+    #das {
+      font-size: 12px;
+      text-align: center;
+    }
+
+    .searchbox {
+      width: 250px;
+      font-size: 13px;
+      margin-top: 10px;
+    }
+
+    .searchBtn {
+      font-size: 13px;
+      padding: 8px 12px;
+    }
+
+    .recipe-container h2 {
+      font-size: 20px;
+    }
+
+    .recipe-details {
+      padding: 15px;
+    }
+
+    footer {
+      font-size: 14px;
+      padding: 15px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    nav h1#er {
+      font-size: 22px;
+    }
+
+    #das {
+      font-size: 11px;
+    }
+
+    .searchbox {
+      width: 90%;
+      font-size: 12px;
+      padding: 8px;
+    }
+
+    .searchBtn {
+      font-size: 12px;
+      padding: 7px 10px;
+      margin-top: 10px;
+    }
+
+    .recipe-container h2 {
+      font-size: 18px;
+      text-align: center;
+    }
+
+    footer {
+      font-size: 13px;
+    }
+
+    footer a {
+      display: block;
+      margin: 6px 0;
+    }
+  }
 </style>
 
 <footer>
@@ -84,6 +189,7 @@
     <a href="Founder.html">Founder</a>
   </p>
 </footer>
-  <script src="sixth.js"></script> 
+
+<script src="sixth.js"></script> 
 </body>
 </html>
